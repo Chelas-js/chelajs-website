@@ -13,7 +13,7 @@ export default function Home() {
           🚀 Grandes cosas están por venir... ¡Seguimos trabajando en ello!
         </p>
         <h4 className="text-lg">
-          👉 Únete a la conversación en nuestro
+          👉 Únete a la conversación en nuestro{" "}
           <CustomLink
             type="external"
             href="https://chat.whatsapp.com/FYEQogueJpS0i5fHA1sOA0"
