@@ -23,7 +23,7 @@ export default function Home() {
             grupo de WhatsApp.
           </CustomLink>{" "}
         </h4>
-        <p className="flex">
+        <div className="flex">
           📅
           <CustomLink
             href={process.env.NEXT_PUBLIC_NEXT_EVENT_LINK}
@@ -35,7 +35,7 @@ export default function Home() {
               {process.env.NEXT_PUBLIC_NEXT_EVENT_DATE}. ¡Inscríbete ahora!
             </p>
           </CustomLink>
-        </p>
+        </div>
       </main>
     </div>
   );
