@@ -1,0 +1,53 @@
+{
+  "contents": [
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Diseña el sitio web para la comunidad Chelajs. Esta comunidad busca crear un espacio para reunir a profesionales y entusiastas de la tecnología. Busca conectar talentos, compartir problemas y soluciones y formar comunidad."
+        },
+        {
+          "text": "La página del evento será un iframe de los eventos publicados en lu.ma solo para próximos eventos."
+        },
+        {
+          "text": "La página de contacto reemplázala por la de unirse a la comunidad, tenemos un link para unirse al WhatsApp."
+        },
+        {
+          "text": "La página de eventos debe tener los eventos pasados."
+        },
+        {
+          "text": "Los eventos pasados no serán un iframe."
+        },
+        {
+          "text": "El año para el footer es 2025, las redes sociales son solo WhatsApp."
+        },
+        {
+          "text": "Agrega un enlace al código de conducta al footer."
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "# Sitemap Completo:\n\n\n## Secciones Globales (Header y Footer):\n\n**1. Header (Global)**\n\n*   **Logo:**\n    *   Texto: ChelaJS (o logo gráfico si existe)\n    *   Enlace: Página principal (Home)\n\n*   **Menú de Navegación Principal:**\n    *   Enlace: Comunidad (Página \"Sobre Nosotros\")\n    *   Enlace: Eventos (Página \"Eventos\")\n    *   Enlace: Recursos (Página \"Recursos\")\n    *   Enlace: Únete (Página \"Únete a la Comunidad\")\n\n**2. Footer (Global)**\n\n*   **Copyright:**\n    *   Texto: © 2025 ChelaJS Comunidad. Todos los derechos reservados.\n\n*   **Enlaces Footer:**\n    *   **Código de Conducta:**\n        *   Enlace: Página \"Código de Conducta\"\n\n*   **Enlaces Sociales:**\n    *   Icono de WhatsApp\n    *   Enlace al grupo de WhatsApp de ChelaJS.\n\n\n---\n\n## Páginas del Sitio Web:\n\n**3. Página Principal (Home)**\n\n*   **Secciones:**\n\n    *   **Hero Section (Sección Principal):**\n        *   **Título Principal:** ChelaJS: Comunidad de Profesionales y Entusiastas de Tecnología\n        *   **Subtítulo Conciso:** Conectando talento, compartiendo conocimiento y construyendo comunidad.\n        *   **Llamada a la Acción (CTA):** Botón \"Únete a la Comunidad\" (Enlaza a la sección \"Sobre ChelaJS\" o a la página \"Únete a la Comunidad\").\n\n    *   **Sobre ChelaJS (Sección Introductoria):**\n        *   **Título:** Sobre ChelaJS\n        *   **Párrafo Breve:** Explicación concisa de qué es ChelaJS, su propósito y a quién va dirigida la comunidad.  Enfocar en la conexión, el aprendizaje colaborativo y el crecimiento profesional.\n        *   **Viñetas (Opcional):**  Resaltar 2-3 beneficios clave de unirse a ChelaJS (ej. networking, acceso a recursos, eventos exclusivos).\n\n    *   **Próximos Eventos (Sección Destacada):**\n        *   **Título:** Próximos Eventos\n        *   **Listado Breve (2-3 Eventos):**  Mostrar los eventos más próximos con título, fecha y una breve descripción.\n        *   **Enlace:** Botón \"Ver todos los Eventos\" (Enlaza a la página \"Eventos\").\n        *   **Mensaje Alternativo (Si no hay eventos):** \"Mantente atento a nuestros próximos eventos. ¡Pronto tendremos novedades!\"\n\n    *   **Recursos Destacados (Sección de Recursos):**\n        *   **Título:** Recursos para la Comunidad\n        *   **Listado Breve (2-3 Recursos):**  Mostrar recursos relevantes o categorías de recursos disponibles (ej. artículos, guías, enlaces útiles).\n        *   **Enlace:** Botón \"Explorar Recursos\" (Enlaza a la página \"Recursos\").\n\n**4. Página: Comunidad (Sobre Nosotros)**\n\n*   **Secciones:**\n\n    *   **Título de Página:** Comunidad ChelaJS (o Sobre Nosotros)\n\n    *   **Introducción a ChelaJS (Sección Principal):**\n        *   **Título:**  Bienvenido a la Comunidad ChelaJS\n        *   **Párrafos:**  Descripción más detallada de ChelaJS. Ampliar la misión, visión y valores de la comunidad.  Explicar para quién es la comunidad y qué pueden esperar los miembros.  (Énfasis en la colaboración, el crecimiento profesional y el apoyo mutuo).\n\n    *   **Nuestros Valores (Sección de Valores):**\n        *   **Título:**  Nuestros Valores\n        *   **Listado de Valores (3-4):**  Enumerar los valores fundamentales de la comunidad ChelaJS (ej. Colaboración, Aprendizaje Continuo, Inclusión, Innovación, Respeto).  Breve descripción de cada valor.\n\n**5. Página: Eventos**\n\n*   **Secciones:**\n\n    *   **Título de Página:** Eventos\n\n    *   **Eventos Próximos (Sección Principal):**\n        *   **Título:**  Próximos Eventos\n        *   **Contenido:**\n            *   **Iframe de Lu.ma (Próximos Eventos):**  Integrar un iframe para eventos **próximos**.\n            *   **Nota Informativa (Opcional):**  Texto informativo sobre los eventos próximos.\n\n    *   **Eventos Pasados (Sección Secundaria):**\n        *   **Título:**  Eventos Pasados (o Ediciones Anteriores)\n        *   **Subtítulo Opcional:** \"Revive nuestros eventos anteriores y descubre todo lo que hemos compartido.\"\n        *   **Contenido:**\n            *   **Listado de Eventos Pasados:**  Listado manual de eventos pasados con título, fecha, descripción (opcional) y enlace a materiales (opcional).\n\n**6. Página: Recursos**\n\n*   **Secciones:**\n\n    *   **Título de Página:** Recursos\n\n    *   **Listado de Recursos (Sección Principal):**\n        *   **Título:**  Explora Nuestros Recursos\n        *   **Organización:**  Listado de categorías de recursos o listado directo de recursos.\n        *   **Tipos de Recursos:**  Artículos, tutoriales, guías, enlaces a herramientas útiles, documentación relevante, etc.\n        *   **Breve Descripción por Recurso/Categoría:**  Descripción concisa de cada recurso o categoría.\n\n**7. Página: Únete a la Comunidad**\n\n*   **Secciones:**\n\n    *   **Título de Página:** Únete a la Comunidad (o Sumate a ChelaJS)\n\n    *   **Invitación a Unirse (Sección Principal):**\n        *   **Título:** Únete a la Comunidad ChelaJS en WhatsApp\n        *   **Párrafo Breve:**  Texto conciso invitando a unirse a WhatsApp y resaltando beneficios.\n        *   **Llamada a la Acción (CTA) Principal:**\n            *   **Botón:** \"Unirme al Grupo de WhatsApp\"\n            *   **Enlace:**  Enlace al grupo de WhatsApp.\n\n**8. Página: Código de Conducta**\n*   **Secciones:**\n    *   **Título de Página:** Código de Conducta\n    *   **Contenido:**\n        *   **Texto:**  Texto completo del código de conducta de la comunidad ChelaJS.  Debe cubrir expectativas de comportamiento,  acciones prohibidas, proceso de reporte de incidentes y consecuencias de violaciones al código.\n\n\n## Diagrama\n\n```mermaid\ngraph LR\n    subgraph \"Header (Global)\"\n        Header_Logo[\"Logo: ChelaJS\"] --\u003e Home\n        Header_Menu[\"Menú\"]\n        Header_Menu --\u003e Comunidad\n        Header_Menu --\u003e Eventos\n        Header_Menu --\u003e Recursos\n        Header_Menu --\u003e Unete\n    end\n\n    subgraph \"Footer (Global)\"\n        Footer_Copyright[\"Copyright: © 2025 ChelaJS Comunidad\"]\n        Footer_Enlaces[\"Enlaces Footer\"]\n        Footer_Enlaces --\u003e Footer_CodigoConducta[\"Código de Conducta\"]\n        Footer_Social[\"Red Social: WhatsApp\"]\n    end\n\n    Home[\"Página Principal (Home)\"]\n    Home --\u003e Hero[\"Hero Section\"]\n    Home --\u003e SobreHome[\"Sobre ChelaJS\"]\n    Home --\u003e EventosHome[\"Próximos Eventos\"]\n    Home --\u003e RecursosHome[\"Recursos Destacados\"]\n\n    Comunidad[\"Página: Comunidad (Sobre Nosotros)\"]\n    Comunidad --\u003e IntroComunidad[\"Introducción a ChelaJS\"]\n    Comunidad --\u003e ValoresComunidad[\"Nuestros Valores\"]\n\n    Eventos[\"Página: Eventos\"]\n    Eventos --\u003e EventosProximos[\"Eventos Próximos\"]\n    EventosProximos --\u003e IframeLuMaProximos[\"Iframe Lu.ma (Próximos)\"]\n    EventosProximos --\u003e NotaInformativaProximos[\"(Nota Informativa Opcional)\"]\n    Eventos --\u003e EventosPasados[\"Eventos Pasados\"]\n    EventosPasados --\u003e ListadoEventosPasados[\"Listado de Eventos Pasados\"]\n    ListadoEventosPasados --\u003e ItemEvento1[\"Item Evento 1\"]\n    ListadoEventosPasados --\u003e ItemEvento2[\"Item Evento 2\"]\n    ListadoEventosPasados --\u003e ItemEventoN[\"Item Evento N ...\"]\n\n\n    Recursos[\"Página: Recursos\"]\n    Recursos --\u003e ListadoRecursos[\"Listado de Recursos\"]\n\n    Unete[\"Página: Únete a la Comunidad\"]\n    Unete --\u003e InvitacionUnirse[\"Invitación a Unirse\"]\n    Unete --\u003e CTA_WhatsApp[\"CTA: Unirme a WhatsApp\"]\n    Unete --\u003e InstruccionesAdicionales[\"(Instrucciones Opcional)\"]\n\n    CodigoConducta[\"Página: Código de Conducta\"]\n    CodigoConducta --\u003e TextoCodigoConducta[\"Texto completo del Código de Conducta\"]\n```"
+        }
+      ]
+    }
+  ],
+  "systemInstruction": {
+    "role": "user",
+    "parts": [
+      {
+        "text": "Eres un experto diseñador de contenido, debes entregar solo el diseño del sitio. Se espera una lista del contenido del sitio web.\n\nDebes considerar que el sitio web es minimalista y debe tener contenido reducido y bien redactado. Se busca crear el sitemap, no el diseño o la UI.\n\nDebes ser claro en qué página se está trabajando y dividirlo por secciones.\n\nDebes reservar en el sitemap la primera parte para el header y el footer del sitio. El desarrollador entenderá que estas secciones son transversales para todas las páginas.\n\nDebes indicar si la página no requiere del footer o del header (si no se indica, se asume que usa el footer o el header global).\n\nDebes agregar un diagrama en formato mermaid."
+      }
+    ]
+  },
+  "generationConfig": {
+    "temperature": 0.7,
+    "topK": 64,
+    "topP": 0.95,
+    "maxOutputTokens": 65536,
+    "responseMimeType": "text/plain"
+  }
+}
