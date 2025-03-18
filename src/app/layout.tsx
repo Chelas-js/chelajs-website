@@ -1,7 +1,10 @@
+"use client"
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import {Header} from "@components/components/Header";
+import { SessionProvider } from "next-auth/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +16,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title:
     "Chela.js – La comunidad de desarrolladores que conecta, comparte y crea 🚀",
   description:
@@ -32,7 +35,9 @@ export default function RootLayout({
           >
         <Header />
         <main>
-          {children}
+          <SessionProvider>
+            {children}
+          </SessionProvider>
         </main>
         </body>
     </html>
