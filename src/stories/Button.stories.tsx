@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import Button from "../components/Button";
+import { Github } from "lucide-react";
 
 const meta: Meta<typeof Button> = {
   title: "Components/Button",
@@ -13,6 +14,7 @@ const meta: Meta<typeof Button> = {
       options: ["primary", "black-outline", "regular", "link"],
       control: { type: "select" },
     },
+    icon: { control: false },
   },
   args: {
     children: "Button",
@@ -36,4 +38,8 @@ export const Regular: Story = {
 
 export const Link: Story = {
   args: { variant: "link" },
+};
+
+export const WithIcon: Story = {
+  args: { variant: "regular", icon: <Github /> },
 };

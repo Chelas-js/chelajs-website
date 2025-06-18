@@ -5,6 +5,7 @@ export type ButtonVariant = "primary" | "black-outline" | "regular" | "link";
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
+  icon?: React.ReactNode;
 }
 
 const baseClasses =
@@ -22,12 +23,14 @@ const Button: React.FC<ButtonProps> = ({
   variant = "link",
   className = "",
   children,
+  icon,
   ...rest
 }) => {
   const classes =
     `${baseClasses} ${variantClasses[variant]} ${className}`.trim();
   return (
     <button className={classes} {...rest}>
+      {icon && <span className="mr-2 inline-flex">{icon}</span>}
       {children}
     </button>
   );
