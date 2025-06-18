@@ -8,5 +8,6 @@ Este repositorio contiene un proyecto Next.js. Para trabajar sobre él ten en cu
 - Asegura el formato y la linting de código antes de enviar cambios:
   - `npm run fmt` formatea con Prettier.
   - `npm run lint` comprueba la linting.
+  - `npm run build` verifica que la aplicación compila correctamente.
 - Todo cambio debe enviarse mediante Pull Request hacia la rama `main`. No realices commits directos en `main`.
 - Coloca documentación en la carpeta `docs`. Los archivos en español se encuentran bajo `docs/es`.
