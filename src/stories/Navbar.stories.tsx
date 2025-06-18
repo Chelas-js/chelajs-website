@@ -9,13 +9,31 @@ const meta: Meta<typeof Navbar> = {
   },
   tags: ["autodocs"],
   argTypes: {},
+  args: {},
+};
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Ambos: Story = {
   args: {
     joinHref: "#",
     loginHref: "#",
   },
 };
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+export const SoloJoin: Story = {
+  args: {
+    joinHref: "#",
+  },
+};
 
-export const Default: Story = {};
+export const SoloLogin: Story = {
+  args: {
+    loginHref: "#",
+  },
+};
+
+export const Ninguno: Story = {
+  args: {},
+};
