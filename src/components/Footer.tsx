@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <ul className="flex space-x-4">
           <li>
             <a
-              href="https://github.com/chela-js"
+              href="https://github.com/chelas-js"
               className="text-blue-400 underline hover:no-underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -18,22 +18,22 @@ const Footer: React.FC = () => {
           </li>
           <li>
             <a
-              href="https://twitter.com/chela_js"
+              href="https://instagram.com/chelajscommunity"
               className="text-blue-400 underline hover:no-underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Twitter
+              Instagram
             </a>
           </li>
           <li>
             <a
-              href="https://www.meetup.com/chela-js"
+              href="https://lu.ma/chelas.js"
               className="text-blue-400 underline hover:no-underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Meetup
+              Luma
             </a>
           </li>
         </ul>
