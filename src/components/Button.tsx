@@ -9,7 +9,7 @@ export interface ButtonProps
 }
 
 const baseClasses =
-  "font-semibold py-2 px-4 rounded transition-colors duration-200";
+  "font-semibold py-2 px-4 rounded transition-colors duration-200 flex items-center justify-center";
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary: "bg-yellow-400 hover:bg-yellow-500 text-[#343433]",
@@ -30,7 +30,13 @@ const Button: React.FC<ButtonProps> = ({
     `${baseClasses} ${variantClasses[variant]} ${className}`.trim();
   return (
     <button className={classes} {...rest}>
-      {icon && <span className="mr-2 inline-flex">{icon}</span>}
+      {icon && (
+        <span
+          className={children ? "mr-2 flex items-center" : "flex items-center"}
+        >
+          {icon}
+        </span>
+      )}
       {children}
     </button>
   );
