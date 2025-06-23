@@ -11,7 +11,7 @@ const meta: Meta<typeof Button> = {
   tags: ["autodocs"],
   argTypes: {
     variant: {
-      options: ["primary", "black-outline", "regular", "link"],
+      options: ["primary", "black-outline", "regular", "link", "blue-outline"],
       control: { type: "select" },
     },
     icon: { control: false },
@@ -42,4 +42,11 @@ export const Link: Story = {
 
 export const WithIcon: Story = {
   args: { variant: "regular", icon: <Github /> },
+};
+
+export const BlueOutline: Story = {
+  args: {
+    variant: "blue-outline",
+    children: "Unete a la conversacion",
+  },
 };
