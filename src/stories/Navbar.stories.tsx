@@ -15,25 +15,26 @@ const meta: Meta<typeof Navbar> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Ambos: Story = {
+export const TodosLosBotones: Story = {
   args: {
     joinHref: "#",
+    loginHref: "#",
+    exploreHref: "#",
+  },
+};
+
+export const SoloUnete: Story = {
+  args: {
+    joinHref: "#",
+  },
+};
+
+export const SoloIniciarSesion: Story = {
+  args: {
     loginHref: "#",
   },
 };
 
-export const SoloJoin: Story = {
-  args: {
-    joinHref: "#",
-  },
-};
-
-export const SoloLogin: Story = {
-  args: {
-    loginHref: "#",
-  },
-};
-
-export const Ninguno: Story = {
+export const SinBotones: Story = {
   args: {},
 };
