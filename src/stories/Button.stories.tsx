@@ -50,3 +50,28 @@ export const BlueOutline: Story = {
     children: "Unete a la conversacion",
   },
 };
+
+export const Showcase: Story = {
+  name: "Variantes",
+  decorators: [
+    (Story) => (
+      <div className="flex items-center justify-center h-screen gap-2">
+        <Button variant="primary" className="w-24">
+          button
+        </Button>
+        <Button variant="black-outline" className="w-24">
+          button
+        </Button>
+        <Button variant="blue-outline" className="w-24">
+          button
+        </Button>
+        <Button variant="link" className="w-24">
+          button
+        </Button>
+        <Button variant="regular" className="w-24">
+          button
+        </Button>
+      </div>
+    ),
+  ],
+};
