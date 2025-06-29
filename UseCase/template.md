@@ -1,0 +1,23 @@
+# UC-XX: Título del caso de uso
+
+## Interlocutores
+
+- ...
+
+## Actores
+
+- ...
+
+## Procedimiento
+
+1. ...
+
+## Flujo
+
+- ...
+
+## Contexto
+
+- **Cuándo:** ...
+- **Dónde:** ...
+- **Por qué:** ...

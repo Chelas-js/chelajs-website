@@ -12,6 +12,12 @@ Este repositorio contiene un proyecto Next.js. Para trabajar sobre él ten en cu
 - Todo cambio debe enviarse mediante Pull Request hacia la rama `main`. No realices commits directos en `main`.
 - El commit generado con los cambios debe seguir la convención Conventional Commit.
 - Coloca documentación en la carpeta `docs`. Los archivos en español se encuentran bajo `docs/es`.
+- Los casos de uso se guardan en la carpeta `UseCase`. Para crear o modificar uno,
+  copia `UseCase/template.md` y renómbralo siguiendo el formato `UC-XX-descripcion.md`,
+  donde `XX` es el número secuencial. El título del archivo debe iniciar con el
+  mismo prefijo y número que su nombre (por ejemplo, `UC-01: Login`).
+  Completa los apartados de interlocutores, actores, procedimiento y flujo,
+  indicando **cuándo**, **dónde** y **por qué**.
 - **Los componentes deben crearse en la carpeta `src/components/`.**
 - **Todos los componentes deben ser escritos en React (TypeScript), siempre retornar un componente por defecto (export default) y utilizar las clases utilitarias de Tailwind CSS para los estilos.**
 
