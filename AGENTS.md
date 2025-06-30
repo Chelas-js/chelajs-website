@@ -18,6 +18,7 @@ Este repositorio contiene un proyecto Next.js. Para trabajar sobre él ten en cu
   mismo prefijo y número que su nombre (por ejemplo, `UC-01: Login`).
   Completa los apartados de interlocutores, actores, procedimiento y flujo,
   indicando **cuándo**, **dónde** y **por qué**.
+  Cada archivo debe contener un apartado `Historia` que describa un escenario en formato Gherkin.
 - **Los componentes deben crearse en la carpeta `src/components/`.**
 - **Todos los componentes deben ser escritos en React (TypeScript), siempre retornar un componente por defecto (export default) y utilizar las clases utilitarias de Tailwind CSS para los estilos.**
 
