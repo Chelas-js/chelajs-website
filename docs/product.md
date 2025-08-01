@@ -4,15 +4,11 @@
 **Fecha de creación:** 31 de julio, 2025  
 **Última actualización:** 31 de julio, 2025
 
----
-
 ## Historial de Cambios
 
 | Versión | Fecha      | Autor | Descripción del Cambio   |
 | ------- | ---------- | ----- | ------------------------ |
 | 1.0     | 31/07/2025 | -     | Creación inicial del PRD |
-
----
 
 ## Resumen Ejecutivo (Overview)
 
@@ -34,8 +30,6 @@ La comunidad ChelaJS necesita un punto central digital que facilite la organizac
 ### Valor agregado
 
 Un ecosistema digital completo que combina networking, eventos, directorio de profesionales y ofertas laborales especializadas, todo en un ambiente amigable y orientado a la comunidad de desarrolladores.
-
----
 
 ## Objetivos y Métricas de Éxito
 
@@ -68,8 +62,6 @@ Un ecosistema digital completo que combina networking, eventos, directorio de pr
 - Capacidad de gestionar eventos mensuales regulares
 - Sistema de filtros funcional para ofertas laborales
 
----
-
 ## Audiencia Objetivo y Personas
 
 ### Personas Principales:
@@ -87,8 +79,6 @@ Un ecosistema digital completo que combina networking, eventos, directorio de pr
 - **Empresas y Reclutadores:** Buscan talento tech especializado
 - **Patrocinadores:** Empresas que quieren apoyar la comunidad tech
 - **Newcomers:** Personas interesadas en ingresar al mundo del desarrollo
-
----
 
 ## Escenarios de Usuario y User Stories
 
@@ -128,8 +118,6 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 - **Quiero** explorar la comunidad y sus miembros
 - **Para que** pueda integrarme y aprender del ecosistema local
 
----
-
 ## Requerimientos Funcionales
 
 ### Features Principales:
@@ -159,7 +147,7 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 
 - Sistema de registro para nuevos miembros
 - Categorización de miembros (desarrollador, empresa, patrocinador)
-- Validación de perfiles
+- Validación de perfiles (proceso manual o automatizado)
 
 ### Features Fuera del Alcance (V1):
 
@@ -167,8 +155,6 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 - Plataforma de pagos para eventos premium
 - Sistema de certificaciones
 - App móvil nativa
-
----
 
 ## Requerimientos Técnicos
 
@@ -185,7 +171,7 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 
 ### Escalabilidad:
 
-- Soporte para hasta 1000 usuarios concurrentes
+- Soporte para hasta 100 usuarios concurrentes
 - Base de datos escalable para crecimiento de membresía
 
 ### Seguridad:
@@ -199,8 +185,6 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 - Next.js (React/TypeScript)
 - Tailwind CSS para estilos
 - Base de datos JSON para V1 (migración a BD relacional en futuras versiones)
-
----
 
 ## Requerimientos de Diseño y UX
 
@@ -223,8 +207,6 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 3. Consulta y RSVP a eventos
 4. Búsqueda y aplicación a ofertas laborales
 
----
-
 ## Messaging y Posicionamiento
 
 ### Value proposition principal:
@@ -241,8 +223,6 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 - Enfoque comunitario y amigable (ambiente de cerveza)
 - Calidad filtrada en ofertas laborales
 - Eventos mensuales regulares y organizados por la comunidad
-
----
 
 ## Plan de Lanzamiento y Timeline
 
@@ -272,8 +252,6 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 - Comunicación a la comunidad
 - Onboarding inicial de miembros
 
----
-
 ## Consideraciones de Lanzamiento
 
 ### Estrategia de rollout:
@@ -287,8 +265,6 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 - Presentación en el próximo evento mensual de ChelaJS
 - Comunicados en canales digitales de la comunidad
 - Tutorial de uso para nuevos usuarios
-
----
 
 ## Riesgos y Mitigación
 
@@ -309,16 +285,12 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 - **Riesgo:** Calidad variable en ofertas laborales y perfiles
 - **Mitigación:** Sistema de validación y moderación de contenido
 
----
-
 ## Temas Abiertos (Open Issues)
 
 - Definir criterios específicos para validación de ofertas laborales
 - Establecer proceso de moderación de contenido
 - Determinar modelo de monetización (si aplica) para sostenibilidad
 - Definir integración con sistemas de autenticación externos
-
----
 
 ## Preguntas Frecuentes (Q&A)
 
@@ -331,14 +303,12 @@ R: Se implementará un sistema de filtros y validación manual para asegurar la 
 **P: ¿Los eventos serán solo presenciales?**
 R: Inicialmente sí, pero se considerarán eventos híbridos en futuras versiones.
 
----
-
 ## Apéndices
 
 ### Documentación técnica adicional:
 
 - Ver `README.md` para instrucciones de desarrollo
-- Ver `AGENTS.md` para guías de implementación
+- Ver `AGENTS.md` para guías de implementación para Agentes de IA
 - Componentes documentados en Storybook
 
 ### Legal y compliance:
