@@ -11,7 +11,10 @@
     "prepare": "husky",
     "storybook": "storybook dev -p 6006",
     "sb": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test:ct": "playwright test -c playwright-ct.config.ts --reporter line",
+    "test:ct:ui": "playwright test -c playwright-ct.config.ts --ui",
+    "test:ct:headed": "playwright test -c playwright-ct.config.ts --headed"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^13.1.0",
@@ -31,6 +34,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^4.0.0",
     "@eslint/eslintrc": "^3.3.1",
+    "@playwright/experimental-ct-react": "^1.54.1",
     "@storybook/addon-a11y": "^9.0.12",
     "@storybook/addon-docs": "^9.0.12",
     "@storybook/addon-onboarding": "^9.0.12",

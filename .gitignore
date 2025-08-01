@@ -41,5 +41,12 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# storybook
 *storybook.log
 storybook-static
+
+# playwright
+/.playwright
+/playwright/.*
+/playwright-report
+/test-results/
