@@ -8,8 +8,6 @@
 
 Implementar todos los componentes necesarios para la página home de ChelaJS Website siguiendo un enfoque incremental y testeable.
 
----
-
 ## Fase 1: Componentes Base y Infraestructura 🏗️
 
 **Duración estimada:** 1 semana  
@@ -45,8 +43,6 @@ Implementar todos los componentes necesarios para la página home de ChelaJS Web
   - `src/stories/SocialIcon.stories.tsx`
 - **Props principales:** `platform`, `size`, `color`, `href`
 - **Tests:** Enlaces externos, accesibilidad, iconos SVG
-
----
 
 ## Fase 2: Componentes de Layout Principal 📐
 
@@ -94,8 +90,6 @@ Implementar todos los componentes necesarios para la página home de ChelaJS Web
   - Apertura en nueva pestaña
   - Responsive layout
   - Accesibilidad iconos
-
----
 
 ## Fase 3: Componentes de Contenido Principal 🎯
 
@@ -170,8 +164,6 @@ Implementar todos los componentes necesarios para la página home de ChelaJS Web
   - Responsive grid behavior
   - Accesibilidad iconos
 
----
-
 ## Fase 4: Componentes de Media y Galería 📸
 
 **Duración estimada:** 1.5 semanas  
@@ -199,8 +191,6 @@ Implementar todos los componentes necesarios para la página home de ChelaJS Web
   - Lazy loading functionality
   - Modal si habilitado
   - Responsive grid behavior
-
----
 
 ## Fase 5: Integración y Componente Principal 🏠
 
@@ -239,8 +229,6 @@ Implementar todos los componentes necesarios para la página home de ChelaJS Web
 - **Archivos a modificar:**
   - `src/app/page.tsx`
 - **Acción:** Reemplazar contenido actual con HomePage component
-
----
 
 ## Fase 6: Testing y Optimización 🧪
 
@@ -292,8 +280,6 @@ Implementar todos los componentes necesarios para la página home de ChelaJS Web
   - Lazy loading fine-tuning
   - Core Web Vitals optimization
 
----
-
 ## Cronograma de Desarrollo 📅
 
 | Semana         | Fase   | Componentes                               | Estado         |
@@ -304,8 +290,6 @@ Implementar todos los componentes necesarios para la página home de ChelaJS Web
 | **Semana 5**   | Fase 4 | PhotoGallery                              | ⏳ Pendiente   |
 | **Semana 6**   | Fase 5 | HomePage, Integración                     | ⏳ Pendiente   |
 | **Semana 7**   | Fase 6 | Testing, Optimización                     | ⏳ Pendiente   |
-
----
 
 ## Criterios de Definición de "Terminado" ✅
 
@@ -340,8 +324,6 @@ Para cada componente se considera terminado cuando:
 - [ ] Consistent con otros componentes
 - [ ] Optimizado para mobile y desktop
 
----
-
 ## Dependencias y Bloqueadores 🚧
 
 ### Dependencias Externas
@@ -361,8 +343,6 @@ Para cada componente se considera terminado cuando:
 - **Performance:** Si PhotoGallery causa problemas de rendimiento
 - **Responsive:** Complejidad en algunos breakpoints
 - **Content:** Disponibilidad de contenido real para testing
-
----
 
 ## Notas de Implementación 📋
 
@@ -417,8 +397,6 @@ npm run lint  # Lint check
 npm run build # Production build
 ```
 
----
-
 ## Hitos y Entregables 🎯
 
 ### Hito 1: Base Components (Semana 1)
@@ -450,8 +428,6 @@ npm run build # Production build
 
 - **Entregable:** Sitio optimizado y testeado para producción
 - **Criterio:** Performance score >90, accessibility compliance, tests passing
-
----
 
 **📞 Contacto del proyecto:** Equipo ChelaJS Development  
 **🔄 Frecuencia de revisión:** Semanal (viernes)  
