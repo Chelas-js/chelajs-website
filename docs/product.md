@@ -207,6 +207,22 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 3. Consulta y RSVP a eventos
 4. Búsqueda y aplicación a ofertas laborales
 
+### Estructura de la Página Home:
+
+#### Secciones principales (de arriba hacia abajo):
+
+1. **Navbar** - Barra de navegación superior
+2. **Hero** - Sección de bienvenida principal
+3. **Galería de Fotos** - Experiencias de la comunidad
+4. **Presentación** - Descripción de ChelaJS
+5. **Características** - Grilla de 3 elementos descriptivos
+6. **Footer** - Enlaces y créditos
+
+#### Layout responsive:
+
+- Desktop: Layout horizontal con sidebar opcional
+- Mobile: Stack vertical con navegación hamburger
+
 ## Messaging y Posicionamiento
 
 ### Value proposition principal:
