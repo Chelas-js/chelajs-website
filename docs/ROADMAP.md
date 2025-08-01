@@ -280,17 +280,6 @@ Implementar todos los componentes necesarios para la página home de ChelaJS Web
   - Lazy loading fine-tuning
   - Core Web Vitals optimization
 
-## Cronograma de Desarrollo 📅
-
-| Semana         | Fase   | Componentes                               | Estado         |
-| -------------- | ------ | ----------------------------------------- | -------------- |
-| **Semana 1**   | Fase 1 | LogoChelaJS, SocialIcon, Button (mejoras) | 🔄 En progreso |
-| **Semana 2**   | Fase 2 | Navbar, Footer                            | ⏳ Pendiente   |
-| **Semana 3-4** | Fase 3 | Hero, AboutSection, FeaturesGrid          | ⏳ Pendiente   |
-| **Semana 5**   | Fase 4 | PhotoGallery                              | ⏳ Pendiente   |
-| **Semana 6**   | Fase 5 | HomePage, Integración                     | ⏳ Pendiente   |
-| **Semana 7**   | Fase 6 | Testing, Optimización                     | ⏳ Pendiente   |
-
 ## Criterios de Definición de "Terminado" ✅
 
 Para cada componente se considera terminado cuando:
@@ -399,32 +388,32 @@ npm run build # Production build
 
 ## Hitos y Entregables 🎯
 
-### Hito 1: Base Components (Semana 1)
+### Hito 1: Base Components
 
 - **Entregable:** LogoChelaJS, SocialIcon funcionando en Storybook
 - **Criterio:** Stories completas y tests pasando
 
-### Hito 2: Layout Foundation (Semana 2)
+### Hito 2: Layout Foundation
 
 - **Entregable:** Navbar y Footer completamente funcionales
 - **Criterio:** Navegación working, responsive, accessible
 
-### Hito 3: Content Sections (Semana 4)
+### Hito 3: Content Sections
 
 - **Entregable:** Hero, About, Features implementados
 - **Criterio:** Contenido rendering, CTAs funcionando, mobile-optimized
 
-### Hito 4: Media Integration (Semana 5)
+### Hito 4: Media Integration
 
 - **Entregable:** PhotoGallery con optimización performance
 - **Criterio:** Lazy loading working, responsive grid, modal functional
 
-### Hito 5: Full Integration (Semana 6)
+### Hito 5: Full Integration
 
 - **Entregable:** HomePage completa y integrada en app
 - **Criterio:** User journey completo funcionando end-to-end
 
-### Hito 6: Production Ready (Semana 7)
+### Hito 6: Production Ready
 
 - **Entregable:** Sitio optimizado y testeado para producción
 - **Criterio:** Performance score >90, accessibility compliance, tests passing
