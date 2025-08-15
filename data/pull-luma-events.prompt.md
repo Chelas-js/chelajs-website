@@ -1,31 +1,8 @@
 ---
 description: Abre el navegador en la URL de Luma, recopila información de eventos pasados y crea un archivo Markdown con los detalles.
 mode: agent
-tools:
-  [
-    "codebase",
-    "usages",
-    "vscodeAPI",
-    "problems",
-    "changes",
-    "testFailure",
-    "terminalSelection",
-    "terminalLastCommand",
-    "openSimpleBrowser",
-    "fetch",
-    "findTestFiles",
-    "searchResults",
-    "githubRepo",
-    "extensions",
-    "runTests",
-    "editFiles",
-    "runNotebooks",
-    "search",
-    "new",
-    "runCommands",
-    "runTasks",
-    "playwright",
-  ]
+# prettier-ignore
+tools: [ "codebase", "usages", "vscodeAPI", "problems", "changes", "testFailure", "terminalSelection", "terminalLastCommand", "openSimpleBrowser", "fetch", "findTestFiles", "searchResults", "githubRepo", "extensions", "runTests", "editFiles", "runNotebooks", "search", "new", "runCommands", "runTasks", "playwright", ]
 model: GPT-5 (Preview)
 ---
 
