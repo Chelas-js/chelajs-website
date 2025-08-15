@@ -1,111 +1,106 @@
-# ChelaJS Website - AI Coding Instructions
+# GitHub Copilot Instructions for ChelaJS Website
 
-This is a Next.js community website for ChelaJS, a Chilean tech community that meets monthly over beers. Focus on community features: member directory, events, and job board.
+## Project Overview
 
-## Architecture & Data Flow
+ChelaJS Website is a Next.js 15 project for the Chilean tech community "Chela.js" - a monthly meetup combining technology and beer. The site serves as a landing page, member directory, and event promotion platform.
 
-- **Frontend**: Next.js 15 with App Router (`src/app/`)
-- **Components**: Modular React/TypeScript components in `src/components/`
-- **Data**: JSON-based storage in `src/dbs/` (transitioning to relational DB in future)
-- **Styling**: Tailwind CSS utilities throughout
-- **Testing**: Vitest + Playwright through Storybook integration
+## Architecture & Tech Stack
 
-Key data flow: `db-members.json` → React components → Storybook stories for testing.
+- **Framework**: Next.js 15 with App Router (`src/app/`)
+- **Styling**: Tailwind CSS with custom color scheme (`text-[#343433]`, yellow-400 primary)
+- **Component Library**: Custom components in `src/components/` + Radix UI (tabs)
+- **Development**: Storybook for component development (`src/stories/`)
+- **Node Version**: 23.7.0 (defined in `.tool-versions` - use `asdf` for management)
 
-## Development Workflow
+## Component Architecture
 
-```bash
-# Node.js 23.7.0 (managed via asdf - see .tool-versions)
-npm install
-npm run dev   # Next.js with Turbopack
-npm run sb    # Storybook on port 6006
-npm run fmt   # Prettier formatting
-npm run lint  # Prettier check
-npm run build # Production build
-```
-
-## Component Conventions
-
-**All components must follow this exact pattern:**
+All components follow this pattern:
 
 ```tsx
 import React from "react";
 
-interface MiComponenteProps {
-  // Define props here
+interface ComponentProps {
+  // TypeScript interface here
 }
 
-const MiComponente: React.FC<MiComponenteProps> = (props) => {
-  return (
-    <div className="p-4 bg-white rounded shadow">
-      {/* Always use Tailwind classes */}
-    </div>
-  );
+const Component: React.FC<ComponentProps> = (props) => {
+  return <div className="tailwind-classes">{/* content */}</div>;
 };
 
-export default MiComponente; // Always default export
+export default Component; // Always default export
 ```
 
-## Storybook Integration
+### Key Component Patterns
 
-Every component needs a story in `src/stories/`. Follow this structure:
+- **Button variants**: 5 types (primary, black-outline, regular, link, blue-outline) with consistent styling
+- **Shields**: Beer-themed badge components in `src/components/shields/`
+- **UserCard**: Displays member info from `src/dbs/db-members.json`
+- **Hero/LandingPage**: Main landing components with community messaging
 
-```typescript
+## Development Workflow
+
+```bash
+npm install       # Install dependencies
+npm run dev       # Start dev server with Turbopack
+npm run fmt       # Format with Prettier
+npm run lint      # Check formatting
+npm run build     # Verify build
+npm run storybook # or npm run sb - Start Storybook on :6006
+```
+
+## Storybook Convention
+
+Stories go in `src/stories/` and follow this structure:
+
+```tsx
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-import { ComponentName } from "./ComponentName";
+import Component from "../components/Component";
 
-const meta = {
-  title: "Section/ComponentName",
-  component: ComponentName,
+const meta: Meta<typeof Component> = {
+  title: "Components/Component",
+  component: Component,
   parameters: { layout: "centered" },
   tags: ["autodocs"],
-} satisfies Meta<typeof ComponentName>;
+  // argTypes and args here
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-  args: {
-    /* component props */
-  },
-};
+export const Default: Story = { args: {} };
 ```
 
-## Data Patterns
+## Data & Content Management
 
-Member data lives in `src/dbs/db-members.json` with this structure:
+- **Member Database**: JSON file at `src/dbs/db-members.json` with structured member data
+- **Documentation**: Spanish docs in `docs/es/`, English in `docs/`
+- **Product Requirements**: Detailed PRD in `docs/product.md`
 
-```json
-{
-  "members": [
-    {
-      "name": "Full Name",
-      "email": "email@domain.com",
-      "social_media": { "linkedin": "username_or_url" }
-    }
-  ]
-}
-```
+## Git & PR Workflow
 
-## Documentation Structure
+- **No direct commits to `main`** - all changes via Pull Request
+- **Commit format**: Follow Conventional Commits
+- **Current branch**: `feat/design-page` with active PR #31
 
-- **Product specs**: `docs/product.md` (PRD format)
-- **Spanish docs**: `docs/es/` for component documentation
-- **Use cases**: `UseCase/UC-XX-description.md` following template structure
+## Project-Specific Conventions
 
-## Git Workflow
-
-- **No direct commits to `main`** - always use PRs
-- **Conventional Commits** required
-- All changes must pass `npm run fmt` and `npm run build`
-
-## Testing Strategy
-
-Tests run through Storybook stories using Vitest + Playwright browser testing. No separate test files - stories serve as living tests and documentation.
+1. **Spanish Documentation**: Primary language in `docs/es/` and component comments
+2. **Beer Theme**: Consistent use of beer-related terminology and shields
+3. **Community Focus**: Components emphasize networking and tech community aspects
+4. **Color Scheme**: Yellow primary (`yellow-400`), dark text (`#343433`), blue accents
+5. **Icons**: Lucide React + Simple Icons for social media
 
 ## Key Files to Reference
 
-- `AGENTS.md` - Detailed development guidelines
-- `docs/product.md` - Complete product requirements
-- `UseCase/template.md` - Use case documentation format
-- `src/components/LandingPage.tsx` - Main community messaging component
+- `AGENTS.md` - Comprehensive agent instructions (source of truth)
+- `docs/product.md` - Product requirements and business context
+- `src/components/Button.tsx` - Button variant patterns
+- `src/dbs/db-members.json` - Data structure example
+- `tailwind.config.ts` - Custom styling configuration
+
+## Integration Points
+
+- **Storybook**: Component development and documentation
+- **Husky**: Git hooks for code quality
+- **Prettier**: Code formatting (not ESLint for linting)
+- **Vitest**: Testing framework with browser testing support

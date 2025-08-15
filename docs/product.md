@@ -1,14 +1,15 @@
 # ChelaJS Website - Documento de Requerimientos de Producto (PRD)
 
-**Versión:** 1.0  
+**Versión:** 1.1  
 **Fecha de creación:** 31 de julio, 2025  
-**Última actualización:** 31 de julio, 2025
+**Última actualización:** 15 de agosto, 2025
 
 ## Historial de Cambios
 
-| Versión | Fecha      | Autor | Descripción del Cambio   |
-| ------- | ---------- | ----- | ------------------------ |
-| 1.0     | 31/07/2025 | -     | Creación inicial del PRD |
+| Versión | Fecha      | Autor | Descripción del Cambio                          |
+| ------- | ---------- | ----- | ----------------------------------------------- |
+| 1.0     | 31/07/2025 | -     | Creación inicial del PRD                        |
+| 1.1     | 15/08/2025 | -     | Definición detallada de estructura del proyecto |
 
 ## Resumen Ejecutivo (Overview)
 
@@ -184,7 +185,103 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 
 - Next.js (React/TypeScript)
 - Tailwind CSS para estilos
+- Nanostores para gestión de estado del cliente
 - Base de datos JSON para V1 (migración a BD relacional en futuras versiones)
+
+## Estructura del Proyecto
+
+### Arquitectura de Directorios
+
+#### Directorios Principales:
+
+##### `src/app/` - Páginas de la aplicación (App Router)
+
+- Contiene las páginas de la web siguiendo la estructura del App Router de Next.js
+- `page.tsx` es igual al path `/` (página principal)
+- El nombre del archivo representa la URL: `login.tsx` = `/login`
+- Directorios con `page.tsx` crean rutas: `login/page.tsx` = `/login`
+
+##### `src/components/` - Componentes reutilizables
+
+- Contiene los componentes clave del sistema
+- Componentes UI generales y reutilizables
+- Subcomponentes organizados por categorías (shields, ui, etc.)
+
+##### `src/dbs/` - Base de datos local
+
+- Componente especial que almacena archivos de datos
+- Archivos JSON que sirven para listar registros
+- Ejemplo: `db-members.json` para el directorio de miembros
+
+##### `src/lib/` - Utilidades compartidas
+
+- Contiene utilidades compartidas entre componentes
+- Funciones helper, constantes y configuraciones
+
+##### `src/stories/` - Documentación Storybook
+
+- Contiene las historias para Storybook
+- Documentación y ejemplos de componentes
+
+##### `tests/` - Pruebas Playwright
+
+- Pruebas end-to-end con Playwright
+- Testing de componentes y flujos de usuario
+
+#### Arquitectura de Estado y Cliente:
+
+##### `src/client-app/` - Aplicación del lado del cliente
+
+- Contendrá componentes, estados y herramientas relacionadas con la página del cliente
+- Gestión de sesión y estados de usuario
+- Componentes específicos para usuarios autenticados e invitados
+
+##### `src/client-app/states/` - Estados globales
+
+- **`session-state.ts`**: Estado que identifica la sesión actual
+  - Implementado con Nanostores
+  - Contiene información como:
+    - Nombre del usuario
+    - Email
+    - User ID
+    - Estado de autenticación
+
+##### `src/client-app/components/` - Componentes con estado
+
+- **`home-page.tsx`**: Componente de inicio con gestión de sesión
+
+  - Utiliza componentes generales pero gestiona el estado de sesión
+  - El navbar cambia dinámicamente según el estado de autenticación
+  - Renderizado condicional basado en si el usuario está logueado
+
+- **`login-page.tsx`**: Página de login con gestión de sesión
+  - Gestiona el estado de login
+  - Si el usuario ya está logueado:
+    - Evita mostrar la página de login
+    - Muestra botón para deslogear
+    - O redirige a página de gestión de sesión/perfil
+
+#### Flujo de Datos y Estado:
+
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   Components    │    │   Client-App    │    │   Nanostores    │
+│   (General UI)  │◄───│   Components    │◄───│   (Session)     │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+                                │
+                       ┌─────────────────┐
+                       │      Pages      │
+                       │   (App Router)  │
+                       └─────────────────┘
+```
+
+#### Convenciones de Desarrollo:
+
+1. **Componentes generales**: En `src/components/` sin lógica de estado específica
+2. **Componentes con estado**: En `src/client-app/components/` con acceso a session-state
+3. **Estados globales**: En `src/client-app/states/` usando Nanostores
+4. **Páginas**: En `src/app/` siguiendo App Router de Next.js
+5. **Datos estáticos**: En `src/dbs/` como archivos JSON
 
 ## Requerimientos de Diseño y UX
 
@@ -206,6 +303,22 @@ Una empresa tech busca desarrolladores con skills específicos para su equipo.
 2. Búsqueda y conexión con otros miembros
 3. Consulta y RSVP a eventos
 4. Búsqueda y aplicación a ofertas laborales
+
+### Estructura de la Página Home:
+
+#### Secciones principales (de arriba hacia abajo):
+
+1. **Navbar** - Barra de navegación superior
+2. **Hero** - Sección de bienvenida principal
+3. **Galería de Fotos** - Experiencias de la comunidad
+4. **Presentación** - Descripción de ChelaJS
+5. **Características** - Grilla de 3 elementos descriptivos
+6. **Footer** - Enlaces y créditos
+
+#### Layout responsive:
+
+- Desktop: Layout horizontal con sidebar opcional
+- Mobile: Stack vertical con navegación hamburger
 
 ## Messaging y Posicionamiento
 
