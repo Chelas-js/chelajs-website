@@ -322,9 +322,6 @@ Antes de considerar un componente completo, verificar:
 ### 8. 🚀 Comandos para Desarrollo
 
 ```bash
-# Desarrollar con Storybook
-bun run storybook
-
 # Ejecutar tests
 bun run test:ct
 
