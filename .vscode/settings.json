@@ -1,1 +1,7 @@
-{}
+{
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "test": "Usa el formato de mensaje de commit convencional. Formato esperado `<tipo>[ámbito opcional]: <descripción>`, el <tipo> debe ser uno de los siguientes: feat, fix, docs, style, refactor, perf, test, chore. Son de tipo `test` los cambios en `src/stories/**`, `tests/**`. Son de tipo `build` los cambios en `package.json`, `pnpm-lock.yaml`, `pnpm-workspace.yaml`, `tsconfig.json`, `.eslintrc.cjs`, `.prettierrc.cjs`, `.vscode/settings.json`. Son de tipo `ci` los cambios en `.github/workflows/**`. El ámbito es opcional, pero si se usa debe ser uno de los siguientes: `codebase`, `extensions`, `usages`, `vscodeAPI`, `problems`, `changes`. Son de tipo `docs` los cambios en `docs/**` o archivos `*.md`."
+    }
+  ]
+}
