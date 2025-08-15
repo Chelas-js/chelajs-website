@@ -1,28 +1,7 @@
 ---
 mode: agent
-tools:
-  [
-    "extensions",
-    "codebase",
-    "usages",
-    "vscodeAPI",
-    "problems",
-    "changes",
-    "testFailure",
-    "terminalSelection",
-    "terminalLastCommand",
-    "openSimpleBrowser",
-    "fetch",
-    "findTestFiles",
-    "searchResults",
-    "githubRepo",
-    "runCommands",
-    "runTasks",
-    "editFiles",
-    "runNotebooks",
-    "search",
-    "new",
-  ]
+# prettier-ignore
+tools: [ "extensions", "codebase", "usages", "vscodeAPI", "problems", "changes", "testFailure", "terminalSelection", "terminalLastCommand", "openSimpleBrowser", "fetch", "findTestFiles", "searchResults", "githubRepo", "runCommands", "runTasks", "editFiles", "runNotebooks", "search", "new", ]
 ---
 
 # Instrucciones para Crear Nuevos Componentes
