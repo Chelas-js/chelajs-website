@@ -1,6 +1,28 @@
 ---
 mode: agent
-tools: ['extensions', 'codebase', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'terminalSelection', 'terminalLastCommand', 'openSimpleBrowser', 'fetch', 'findTestFiles', 'searchResults', 'githubRepo', 'runCommands', 'runTasks', 'editFiles', 'runNotebooks', 'search', 'new']
+tools:
+  [
+    "extensions",
+    "codebase",
+    "usages",
+    "vscodeAPI",
+    "problems",
+    "changes",
+    "testFailure",
+    "terminalSelection",
+    "terminalLastCommand",
+    "openSimpleBrowser",
+    "fetch",
+    "findTestFiles",
+    "searchResults",
+    "githubRepo",
+    "runCommands",
+    "runTasks",
+    "editFiles",
+    "runNotebooks",
+    "search",
+    "new",
+  ]
 ---
 
 # Instrucciones para Crear Nuevos Componentes
@@ -23,6 +45,7 @@ tests/[ComponentName].spec.tsx             # Tests de Playwright Component Testi
 ### 2. 🧩 Componente Principal (`src/components/[ComponentName].tsx`)
 
 #### Estructura TypeScript:
+
 ```tsx
 import React from "react";
 import { /* iconos de lucide-react */ } from "lucide-react";
@@ -79,6 +102,7 @@ export default [ComponentName];
 ```
 
 #### Elementos Clave Observados en Footer:
+
 - **Interfaces tipadas**: Definir interfaces específicas del dominio (`SocialLink`)
 - **Props con valores por defecto**: Usar defaultProps pattern
 - **Clases CSS responsivas**: Mobile-first con breakpoints (`md:`, `lg:`)
@@ -159,6 +183,7 @@ export const Mobile: Story = {
 ```
 
 #### Historias Requeridas:
+
 1. **Default**: Estado básico del componente
 2. **[Minimal]**: Versión reducida/mínima
 3. **[Custom]**: Con datos personalizados
@@ -188,7 +213,7 @@ test.describe("[ComponentName] Component", () => {
   test("Default story renders correctly", async ({ mount }) => {
     const component = await mount(<stories.Default />);
     await expect(component).toBeVisible();
-    
+
     // Verificar elementos principales
     await expect(component.getByTestId("[component-identifier]")).toBeVisible();
     await expect(component.getByText("[expectedText]")).toBeVisible();
@@ -197,7 +222,7 @@ test.describe("[ComponentName] Component", () => {
   // Tests de interactividad (si aplica)
   test("[Interactive elements] are functional", async ({ mount }) => {
     const component = await mount(<stories.Default />);
-    
+
     // Test de links, botones, etc.
     const [element] = component.getByRole("[role]", { name: "[name]" });
     await expect([element]).toBeVisible();
@@ -221,7 +246,7 @@ test.describe("[ComponentName] Component", () => {
   test("Hover effects work correctly", async ({ mount, page }) => {
     const component = await mount(<stories.Default />);
     const [element] = component.getByRole("[role]");
-    
+
     await [element].hover();
     await expect([element]).toHaveClass(/[hoverClass]/);
   });
@@ -230,7 +255,7 @@ test.describe("[ComponentName] Component", () => {
   test("Mobile story maintains responsive layout", async ({ mount }) => {
     const component = await mount(<stories.Mobile />);
     await expect(component).toBeVisible();
-    
+
     const container = component.locator("[responsiveSelector]");
     await expect(container).toBeVisible();
   });
@@ -238,7 +263,7 @@ test.describe("[ComponentName] Component", () => {
   // Tests de accesibilidad
   test("Accessibility features are present", async ({ mount }) => {
     const component = await mount(<stories.Default />);
-    
+
     // Verificar aria-labels, titles, etc.
     const [element] = component.getByRole("[role]");
     await expect([element]).toHaveAttribute("aria-label", "[expectedLabel]");
@@ -248,6 +273,7 @@ test.describe("[ComponentName] Component", () => {
 ```
 
 #### Categorías de Tests Requeridas:
+
 1. **Renderizado básico**: Verificar que el componente se muestra
 2. **Funcionalidad**: Links, botones, interacciones
 3. **Variaciones**: Cada historia debe tener su test
@@ -259,16 +285,18 @@ test.describe("[ComponentName] Component", () => {
 ### 6. 🎨 Convenciones de Diseño
 
 #### Clases Tailwind Estándar:
+
 - **Layout**: `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`
 - **Responsive**: `flex flex-col md:flex-row`
 - **Espaciado**: `space-y-6 md:space-y-0`
-- **Colores de marca**: 
+- **Colores de marca**:
   - Principal: `text-[#343433]`
   - Hover: `hover:text-yellow-400`
   - Secundario: `text-gray-600`, `text-gray-400`
 - **Transiciones**: `transition-colors duration-200`
 
 #### Patrones de Accesibilidad:
+
 - Links externos: `target="_blank" rel="noopener noreferrer"`
 - Labels descriptivos: `aria-label` y `title`
 - Roles semánticos apropiados
@@ -307,5 +335,3 @@ bun run test
 ---
 
 **Nota**: Estas instrucciones están basadas en el análisis completo del componente Footer, que sirve como referencia de calidad y estándares para el proyecto ChelaJS.
-
-
